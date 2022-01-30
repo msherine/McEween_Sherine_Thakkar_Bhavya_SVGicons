@@ -25,7 +25,6 @@ body {
     cursor: pointer;
     background-color: #ffffeb ;
     font-family: 'Montserrat', sans-serif;
-    color: ;
     text-align: center;
 }
 
@@ -66,14 +65,27 @@ body {
     left: 937px
 }
 
-}
-
-}
  /* ___________________________________________
        02. CSS Grid
 ___________________________________________ */
 
-.grid1 {
+#grid1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin: 3em;
+}
+
+#grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin: 3em;
+  }
+
+#grid3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -82,24 +94,9 @@ ___________________________________________ */
 }
 
 .container {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
   }
-
-.grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    margin: 3em;
-  }
-
-.grid3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    margin: 3em;
-}
+.container img { width: 100%; }
